@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+
+    background: #e88ddd;
+}
+
+.board
+{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+
+    border: 2px solid black;
+}
+
+.clearfix
+{
+    clear: both;
+    overflow: auto; 
+
+    width: 100%;
+
+    content: '';
+}
+.clearfix > *
+{
+    float: left;
+
+    width: 12.5%;
+    height: 50px;
+}
+
+.item__1 li:nth-child(odd),
+.item__3 li:nth-child(odd),
+.item__5 li:nth-child(odd),
+.item__7 li:nth-child(odd)
+{
+    background: white;
+}
+
+.item__1 li:nth-child(even),
+.item__3 li:nth-child(even),
+.item__5 li:nth-child(even),
+.item__7 li:nth-child(even)
+{
+    background: black;
+}
+
+.item__2 li:nth-child(odd),
+.item__4 li:nth-child(odd),
+.item__6 li:nth-child(odd),
+.item__8 li:nth-child(odd)
+{
+    background: black;
+}
+
+.item__2 li:nth-child(even),
+.item__4 li:nth-child(even),
+.item__6 li:nth-child(even),
+.item__8 li:nth-child(even)
+{
+    background: white;
+}

@@ -1,0 +1,35 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+//fonts
+$title-font: 'Roboto', sans-serif;
+$text-font: 'Raleway', sans-serif;
+$btn-font: 'OpenSans', sans-serif;
+
+// SIZES
+$container-width: 1140px;
+$container-height: 800px;
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+$base-size: 16px;
+$huge-size: px_to_rem(60px);
+$big-size: px_to_rem(36px);
+$large-size: px_to_rem(24px);
+$middle-size: px_to_rem(18px);
+$small-size: px_to_rem(14px);
+
+//COLORS
+$white: #ffffff;
+$black: #333333;
+$grey: #898f8f;
+$light-grey: #cccccc; //icon
+$middle-grey: #666666;
+$yellow: #ffcc00;
+
+$placeholder-color: $black;

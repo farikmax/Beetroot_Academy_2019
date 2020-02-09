@@ -1,0 +1,66 @@
+//FONTS
+@font-face {
+	font-family: "Miso";
+	src: url("../fonts/miso-regular.otf") format("OpenType");
+}
+
+@font-face {
+	font-family: "Miso Bold";
+	src: url("../fonts/miso-bold.otf") format("OpenType");
+}
+
+@font-face {
+	font-family: "Miso Light";
+	src: url("../fonts/miso-light.otf") format("OpenType");
+}
+
+//fonts
+$title-font: 'Miso Bold', sans-serif;
+$text-font: 'Miso', sans-serif;
+$light-font: 'Miso Light', sans-serif;;
+
+// SIZES
+$container-width: 1140px;
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+$base-size: 20px;
+$large-size: px_to_rem(24px);
+$big-size: px_to_rem(56px);
+$huge-size: px_to_rem(70px);
+
+//COLORS
+$bg-color: #fdde7e;
+$white-color: #ffffff;
+$black-color: #333333;
+$green-color: #02995b;
+$orange-color: #ff7900;
+$yellow-color: #ffca28;
+$grey-color: #bdbdbd;
+$lightgrey-color: #4e4e4e;
+
+
+
+// font-size: 70px;
+// letter-spacing: 2px;
+// line-height: 24px;
+// color: #02995b;
+// font-family: "Miso";
+// font-weight: bold;
+// text-align: center;
+
+
+// font-size: 56px;
+// line-height: 24px;
+// color: #333333;
+// font-family: "Miso";
+// text-align: center;
+
+// font-size: 56px;
+// line-height: 24px;
+// color: #333333;
+// font-family: "Miso";
+// text-align: center;

@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "MuseoSansRounded-100";
+	src: local("MuseoSansRounded-100"), url("https://nomail.com.ua/files/woff/24b76c23a1f336d9579b7f3447f9812c.woff") format("woff");
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../fonts/font-awesome-4.7.0/fonts/fontawesome-webfont: .woff;");
+	src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+	background-color: grey;
+}
+
+body {
+	font-family: "MuseoSansRounded-100";
+	font-weight: 100;
+	font-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url("../img/fon1.png") no-repeat 50% 50%;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.container {
+	border-radius: 10px;
+	background-color:  #111a28;
+	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	max-width: 685px;
+	width: 100%;
+}
+
+.logo {
+	display: inline-block;
+	padding: 20px;
+	cursor: pointer;
+
+	& > * {
+		display: block;
+	}
+}
+
+.content {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+
+.product__image {
+	flex-basis: 65%;
+	text-align: center;
+
+	.product__image--link {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		max-width: 320px;
+		padding-top: 62%;
+	}
+
+	.product__image--image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.product__description {
+	position: relative;
+	max-width: 260px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 50px 25px 15px;
+
+	h1 {
+		position: absolute;
+		overflow: hidden;
+		opacity: 0;
+		right: -100000px;
+	}
+}
+
+.product__description--title {
+	color:  #e1e1e1;
+	font-size: 1.5rem;
+	line-height: 1.625rem;
+	text-align: left;
+	opacity: 0.9;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.product__description--subtitle {
+	color:  #e1e1e1;
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+	text-align: left;
+	opacity: 0.5;
+	margin-bottom: 15px;
+}
+
+.product__description--rating {
+	display: flex;
+	font-size: 0.75rem;
+	letter-spacing: 1.5px;
+	margin-bottom: 25px;
+}
+
+.rating__stars--yellow {
+	color: #f4be0e;
+}
+
+.rating__stars {
+	color: #9da1a6;
+}
+
+.rating__stars--yellow,
+.rating__stars {
+	cursor: pointer;
+
+	&:hover {
+		color: #f4be0e;
+	}
+}
+
+.order {
+	text-align: left;
+
+	label {
+		display: inline-block;
+		width: 100%;
+		max-width: 70px;
+		max-height: 30px;
+		margin-bottom: 30px;
+	}
+}
+.product__description--size,
+.product__description--qty {
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: "";
+		opacity: .6;
+		transform: rotate(45deg);
+		color: transparent;
+		right: 10px;
+		top: 9px;
+		width: 6px;
+		height: 6px;
+		border: 1px solid #aaa;
+		border-left-color: transparent;
+		border-top-color: transparent;
+	}
+}
+
+.size__select,
+.qty__select {
+	font-size: 0.875rem;
+	max-width: 70px;
+	width: 100%;
+	height: 30px;
+	background-color: #111a28;
+	color: #e1e1e1;
+	padding-left: 11px;
+	opacity: 0.6;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #4c525a;
+	}	
+}
+
+.product__description--buton {
+	display: block;
+	width: 100%;
+	height: 40px;
+	font-size: 0.875rem;
+	line-height: 1.125rem;
+	color:  #e1e1e1;
+	opacity: 0.6;
+	background-color: #111a28;
+	border: 1px solid #e1e1e1;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #4c525a;
+	}
+}

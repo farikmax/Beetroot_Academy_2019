@@ -1,0 +1,66 @@
+// BUTTON-TO-TOP START
+ .button-to-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-to-top;
+  $size: 80px;
+  width: $size;
+  height: $size;
+  bottom: 4%;
+  right: 2%;
+  cursor: pointer;
+  z-index: 10;
+  @include transition;
+
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+    background-color: darken($bg-color-to-top, 5%);
+    border: 1px solid $white;
+  }
+
+  @media screen and (max-width: 767px) {
+    $size: 40px;
+    width: $size;
+    height: $size;
+    right: 4%;
+    bottom: 2%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    $size: 60px;
+    width: $size;
+    height: $size;
+    right: 2%;
+    bottom: 2%;
+  }
+
+  &::before {
+    position: relative;
+    content: "";
+    display: block;
+    $size: 30px;
+    width: $size;
+    height: $size;
+    border: 2px solid $white;
+    border-top: none;
+    border-right: none;
+    top: 10%;
+    transform: rotate(135deg);
+
+    @media screen and (max-width: 767px) {
+      $size: 20px;
+      width: $size;
+      height: $size;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      $size: 25px;
+      width: $size;
+      height: $size;
+    }
+  }
+}
+// BUTTON-TO-TOP END

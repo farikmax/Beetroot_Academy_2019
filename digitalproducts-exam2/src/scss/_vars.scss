@@ -1,0 +1,76 @@
+//IMPORT FONTS
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic-ext');
+
+//FONTS
+$main-font: 'ProximaNova', sans-serif;
+$secondary-font: 'PT Sans', sans-serif;
+
+//PX_TO_REM
+$base-size: 16px;
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+$size-10: px_to_rem(10px);
+$size-11: px_to_rem(11px);
+$size-12: px_to_rem(12px);
+$size-13: px_to_rem(13px);
+$size-14: px_to_rem(14px);
+$size-15: px_to_rem(15px);
+$size-17: px_to_rem(17px);
+$size-18: px_to_rem(18px);
+$size-19: px_to_rem(19px);
+$size-20: px_to_rem(20px);
+$size-22: px_to_rem(22px);
+$size-24: px_to_rem(24px);
+$size-26: px_to_rem(26px);
+$size-28: px_to_rem(28px);
+$size-30: px_to_rem(30px);
+$size-36: px_to_rem(36px);
+$size-72: px_to_rem(72px);
+
+// IMG-PATH
+$img-path: "../img";
+
+//COLORS:
+$black: #000000;
+$white: #ffffff;
+$top-menu-bg: #9f9acf;
+$first-screen-text: #fefefb;
+$about-us-text-color: #665f60;
+$about-us-bg-light: lighten(#cccae4, 7%);
+$button-color: #7d7a7c;
+$our-services-card-bg: #dbdbdb;
+$our-services-text: $about-us-text-color;
+$bg-color-to-top: #b3afd4;
+$bg-meet-our-team: #ebebeb;
+$meet-our-team-title: $about-us-text-color;
+$meet-our-team-card-title: $top-menu-bg;
+$bg-footer: $top-menu-bg;
+$bg-animation-card: #dad8e3;
+$bg-form: rgba(213, 211, 221, 0.7);

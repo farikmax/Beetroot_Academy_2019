@@ -1,0 +1,49 @@
+// FIRST-SCREEN START
+.first-screen {
+  min-height: 100vh;
+  background: url('../img/first-screen-bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0 0 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    background-size: cover;
+  }
+
+  @import 'top-menu';
+
+  &__title {
+    font-family: $main-font;
+    font-size: $size-72;
+    font-weight: 700;
+    color: $first-screen-text;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      font-size: $size-30;
+    }
+  }
+
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: $size-24;
+    font-weight: 400;
+    color: $first-screen-text;
+    font-style: italic;
+    text-align: center;
+
+    @media screen and (max-width: 334px) {
+      font-size: $size-18;
+    }
+
+    @media screen and (min-width: 335px) and (max-width: 767px) {
+      font-size: $size-20;
+    }
+  }
+}
+// FIRST-SCREEN END

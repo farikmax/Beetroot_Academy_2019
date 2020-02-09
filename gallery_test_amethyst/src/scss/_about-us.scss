@@ -1,0 +1,98 @@
+// ABOUT-US
+.about-us {
+	background: $white;
+
+	&--title {
+		font-size: $about-us-title;
+		color: $dark-grey;
+		font-weight: 700;
+	}
+
+	&--uppercase {
+		text-transform: capitalize;
+		font-size: $about-us-title;;
+		color: $dark-grey;
+		font-weight: 700;
+	}
+
+	&--subtitle {
+		font-family: $secondary-font;
+		font-size: $about-us-subtitle;
+		color: $about-grey;
+		font-style: italic;
+		text-align: center;
+	}
+
+	&--description {
+		font-size: $about-us-description;
+		color: $about-grey;
+		font-weight: 400;
+		text-align: center;
+
+		@media all and (max-width: 575px) {
+			padding: 0 15px;
+			text-align: justify;
+		}
+	}
+
+	&-menu {
+		padding: 60px 35px 50px 50px;
+
+		@media all and (max-width: 991px) {
+			padding: 35px 15px 25px 70px;
+		}
+
+		&--item {
+			position: relative;
+		}
+
+		&--icon {
+			position: absolute;
+			content: "";
+			display: flex;
+			font-size: $about-us-menu--icon;
+			color: $about-icon;
+			left: -50px;
+		}
+
+		&--paragraph {
+			font-size: $about-us-menu--paragraph;
+			color: $dark-grey;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		&--description {
+			font-size: $about-us-menu--description;
+			color: $about-grey;
+			font-weight: 400;
+
+			@media all and (max-width: 991px) {
+				text-align: justify;
+			}
+		}
+	}
+
+	&--download {
+		font-size: $about-us-menu--download;
+		text-transform: uppercase;
+		border: 2px solid $about-icon;
+		padding: 10px 20px;
+		text-decoration: none;
+		color: $dark-grey;
+		border-radius: 30px 30px 30px 30px;
+		@include transition(all, .3s);
+		text-align: center;
+
+		&:hover {
+			text-decoration: none;
+			color: $dark-grey;
+			font-weight: 700;
+			text-shadow: -3px 3px 12px $about-icon,
+			3px -2px 12px $about-icon;
+			border-color: $about-icon;
+			box-shadow: -3px 3px 35px $about-icon,
+			3px -5px 35px $about-icon;
+		}
+	}
+}

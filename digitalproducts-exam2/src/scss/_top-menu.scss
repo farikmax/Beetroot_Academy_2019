@@ -1,0 +1,58 @@
+// TOP-MENU START
+.top-menu {
+  position: fixed;
+  top: 2%;
+  width: 100%;
+  z-index: 100000;
+  transition: all .2s ease;
+
+  &-logo {
+    display: block;
+    max-width: 54px;
+    @include padding-hack(45%, contain);
+  }
+
+  &.fixed {
+    top: 0;
+    background-color: $bg-color-to-top;
+
+    .top-menu-logo {
+      @include padding-hack(28%, contain);
+    }
+  }
+
+  .top-menu-navigation {
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &__link {
+      font-family: $main-font;
+      font-size: $size-24;
+      font-weight: bold;
+      color: $first-screen-text;
+      text-transform: uppercase;
+      transition: color .2s ease;
+
+      @media screen and (max-width: 455px) {
+        font-size: $size-11;
+      }
+
+      @media screen and (min-width: 456px) and (max-width: 767px) {
+        font-size: $size-15;
+      }
+
+      &:hover {
+        color: $top-menu-bg;
+        text-shadow: -3px 3px 12px $white,
+        3px -3px 12px $white,
+        2px -2px 12px $white;
+      }
+    }
+  }
+}
+// TOP-MENU END

@@ -1,0 +1,58 @@
+.works {
+	background: $white;
+
+	&__title {
+		font-size: $works-title;
+		color: $dark-grey;
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		font-family: $secondary-font;
+		font-size: $works-subtitle;
+		color: $about-grey;
+		font-style: italic;
+		text-align: center;
+	}
+
+	&__nav {
+		width: 100%;
+
+		&--menu {
+			list-style: none;
+			width: 100%;
+		}
+
+		&--item {
+			display: flex;
+			text-transform: uppercase;
+			color: $work-nav-menu;
+			font-size: $works-nav-menu-item;
+			font-weight: 700;
+			width: 100%;
+
+			@media all and (max-width: 1199px) {
+				display: flex;
+				padding: 0 5px;
+			}
+		}
+
+		&--link {
+			width: 100%;
+			align-items: center;
+			text-align: center;
+			text-decoration: none;
+			color: lighten($about-grey, 10%);
+			@include transition(color);
+
+			&:hover,
+			&:active {
+				text-decoration: none;
+				color: $work-nav-menu;
+				text-shadow: -3px 3px 15px $work-nav-menu,
+				3px -3px 15px $work-nav-menu;
+			}	
+		}
+	}
+}

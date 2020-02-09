@@ -1,0 +1,87 @@
+// OUR-SERVICES START
+.our-services {
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+      padding: 25px 0 0;
+    }
+
+  &__card {
+    padding: 80px 90px;
+    height: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 991px) {
+      padding: 30px 15px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      padding: 30px 25px;
+    }
+  }
+
+  &__card--grey {
+    background-color: $our-services-card-bg;
+
+    @media screen and (max-width: 991px) {
+      background-color: $white;
+    }
+  }
+
+  &__card--icon {
+    display: inline-flex;
+    max-width: 60px;
+    margin-bottom: 30px;
+    @include padding-hack(30%, contain);
+  }
+
+  &__card--title {
+    font-size: $size-24;
+    color: $our-services-text;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__card--title--big {
+    font-size: $size-36;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card--description {
+    font-size: $size-18;
+    color: $our-services-text;
+    font-style: italic;
+    font-family: $secondary-font;
+    margin: 0;
+  }
+
+  &__card--description--big {
+    color: $white;
+
+    & > * {
+      display: block;
+      font-style: initial;
+    }
+  }
+
+  &__card--big {
+    background: url('../img/our-services-card-bg.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 767px) {
+      background-color: $white;
+      padding: 30px 15px;
+    }
+  }
+}
+// OUR-SERVICES END

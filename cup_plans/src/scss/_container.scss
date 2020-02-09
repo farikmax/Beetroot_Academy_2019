@@ -1,0 +1,79 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: $container-width;
+	margin: auto;
+	min-height: 100vh;
+}
+
+.container__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex-basis: 30%;
+	background-color: $white-color;
+	border-radius: 5px;
+	box-shadow: -1px 2px 20px 1px rgba(100, 140, 170, 0.8);
+	transition: box-shadow 0.3s ease;
+	min-height: 445px;
+	padding: 40px 0;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: -1px 1px 8px 5px rgba(100, 185, 170, 0.8);
+	}
+
+	.price {
+		flex-grow: 1;
+		font-family: $title-font;
+		font-size: $huge-size;
+		letter-spacing: 2px;
+		color: $green-color;
+		font-weight: bold;
+	}
+
+	.image__link {
+		flex-grow: 2;
+		position: relative;
+		display: block;
+		max-width: 135px;
+		max-height: 135px;
+		width: 100%;
+		padding-top: 60%;
+		font-size: 0;
+	}
+
+	.image__coffee {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.name__coffee {
+		flex-grow: 3;
+		font-family: $text-font;
+		font-size: $big-size;
+		color: $black-color;
+		text-transform: capitalize;
+	}
+
+	.text__coffee {
+		font-size: $base-size;
+		color: $lightgrey-color;
+		font-family: $light-font;
+		letter-spacing: 1px;
+	}
+}
+
+.container__box--large {
+		min-height: 500px;
+		padding: 50px 0 60px;
+	}

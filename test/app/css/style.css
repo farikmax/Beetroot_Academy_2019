@@ -1,0 +1,13 @@
+.test {
+	--viktoriyasCoolColor: pink;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	/* // background-color: $color; */
+	background-color: var(--viktoriyasCoolColor);
+}
+.test:hover {
+	--viktoriyasCoolColor: blue;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUU7RUFDQywyQkFBc0I7RUFFdEIsWUFEWTtFQUVaLGFBRlk7RUFHWixZQUFZO0VBQ1osaUNBQUE7RUFDQSw0Q0FBNEMsRUFBQTtFQVA3QztJQVVFLDJCQUFzQixFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlx0XHQudGVzdCB7XHJcblx0XHRcdC0tdmlrdG9yaXlhc0Nvb2xDb2xvcjogcGluaztcclxuXHRcdFx0JHNpemU6IDUwMHB4O1xyXG5cdFx0XHR3aWR0aDogJHNpemU7XHJcblx0XHRcdGhlaWdodDogJHNpemU7XHJcblx0XHRcdG1hcmdpbjogYXV0bztcclxuXHRcdFx0LyogLy8gYmFja2dyb3VuZC1jb2xvcjogJGNvbG9yOyAqL1xyXG5cdFx0XHRiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS12aWt0b3JpeWFzQ29vbENvbG9yKTtcclxuXHJcblx0XHRcdCY6aG92ZXIge1xyXG5cdFx0XHRcdC0tdmlrdG9yaXlhc0Nvb2xDb2xvcjogYmx1ZTtcclxuXHRcdFx0fVxyXG5cdFx0fSJdfQ== */

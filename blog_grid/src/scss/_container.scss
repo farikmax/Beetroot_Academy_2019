@@ -1,0 +1,163 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: $container-width;
+	text-transform: uppercase;
+	margin: auto;
+	padding: 90px 0;
+
+	.container__row {
+		display: flex;
+		justify-content: space-between;
+		min-height: 545px;
+	}
+
+	.first-row {
+		margin-bottom: 20px;
+	}
+
+	.second-row {
+		margin-bottom: 75px;
+	}	
+}
+
+.row__box {
+	position: relative;
+	display: flex;
+	flex-basis: 32%;
+	background-color: $white-color;
+}
+
+.row__box--large {
+	flex-basis: 66%;
+}
+
+.box__link {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	transition: box-shadow 0.3s ease;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.7;
+		box-shadow: -1px 1px 8px 5px rgba(82, 109, 206, 0.8);
+	}
+}
+
+.box__image,
+.box__link--large {
+	display: flex;
+	position: relative;
+	width: 100%;
+	padding-top: 67%;
+
+	.box__foto,
+	.box__foto--large {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		object-fit: cover;
+	}
+}
+
+.box__link--large {
+	padding-top: 74%;
+}
+
+.box__text {
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	height: 100%;
+}
+
+.box__text--large {
+	padding: 0;
+	height: auto;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	right: 0;
+	width: 60%;
+}
+
+.box__subtitle {
+	flex-grow: 1;
+	font-size: $middle-size;
+	letter-spacing: 0px;
+	color: $grey-color;
+	font-weight: 500;
+}
+
+.box__subtitle--large {
+	flex-grow: 0;
+	color: $white-color;
+	opacity: 0.7;
+	margin-bottom: 20px;
+}
+
+.box__title {
+	flex-grow: 2;
+	font-size: $large-size;
+	line-height: 36px;
+	color: $black-color;
+	font-weight: 900;
+}
+
+.box__title--large {
+	flex-grow: 0;
+	color: $white-color;
+	font-size: $big-size;
+	font-weight: 500;
+}
+
+.box__icon {
+	position: relative;
+	display: flex;
+	flex-grow: 3;
+	width: 100%;
+	height: 100%;
+	max-width: 54px;
+	max-height: 54px;
+
+	.icon {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		object-fit: cover;
+	}
+}
+
+.box__subtitle--hidden {
+	opacity: 0;
+}
+
+.loading__box {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+	.loading__image {
+		display: block;
+		margin-right: 10px;
+	}
+
+	.loading__text {
+		display: inline-block;
+		color: $grey-color;
+		font-size: $base-size;
+	}
+}

@@ -1,0 +1,58 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 100px;
+	margin-bottom: 40px;
+
+	.header__subtitle {
+		font-family: $text-font;
+		color: $grey;
+		font-size: $middle-size;
+		font-weight: 500;
+		line-height: $large-size;
+		letter-spacing: 0.5px;
+		margin-bottom: 10px;
+	}
+
+	.header__title {
+		font-family: $title-font;
+		color: $yellow;
+		font-size: $huge-size;
+		font-weight: 900;
+		margin: 0;
+		line-height: $huge-size;
+		margin-bottom: 40px;
+	}
+
+	.header__icon {
+		$size: 24px;
+		display: inline-block;
+		position: relative;
+		background: url("../img/headericon.png") no-repeat center;
+		min-width: $size;
+		min-height: $size;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			width: 18.5%;
+			border-top: 1px solid $yellow;
+		}
+
+		&::after {
+			left: 52%;
+		}
+
+		&::before {
+			right: 52%;
+		}
+	}
+}
+
+
+

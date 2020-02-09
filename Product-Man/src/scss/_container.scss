@@ -1,0 +1,69 @@
+ .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 155px;
+}
+
+.logo__link {
+    font-family: $fat-font;
+    color:  $black;
+    font-size: 3rem;
+    font-weight: 900;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $red;
+        transform: scale(1.1); 
+    }
+}
+
+.navigation {
+    flex-basis: 33%;
+    display: flex;
+    align-items: center; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+
+    &__item {
+        list-style: none;
+        position: relative;
+    }
+
+    &__link {
+        font-family: $fat-font;
+        color:  $black;
+        font-size: 1.125rem;
+        font-weight: 400;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $red;
+            transform: scale(1.1); 
+        }
+    }
+
+    .fa {
+        display: inline-block;
+        color:  $black;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $red;
+            transform: scale(1.1);
+        }
+    }
+}
+

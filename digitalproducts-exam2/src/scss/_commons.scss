@@ -1,0 +1,46 @@
+// COMMON START
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@import 'button-to-top';
+
+.bold-text {
+  font-weight: 700;
+}
+
+.italic-text {
+  font-style: italic;
+}
+// COMMON END

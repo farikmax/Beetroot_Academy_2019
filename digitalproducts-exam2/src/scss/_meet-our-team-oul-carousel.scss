@@ -1,0 +1,148 @@
+// MEET-OUR-TEAM-OWL-CAROUSEL START
+.meet-our-team-carousel {
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $bg-meet-our-team;
+    padding: 120px 0 0 0;
+  }
+
+  &__wrapper {
+    $size: 240px;
+    max-width: $size;
+    max-height: $size;
+    height: 100%;
+    @include padding-hack($size, contain);
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__foto {
+    border-radius: 50%;
+    border: 10px solid $bg-meet-our-team;
+  }
+
+  &__description {
+    width: 100%;
+    background-color: $white;
+    padding: 160px 0 50px 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: $size-24;
+    font-weight: 700;
+    color: $meet-our-team-card-title;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: $size-24;
+    font-weight: 400;
+    font-style: italic;
+    color: $meet-our-team-title;
+  }
+
+  &__social-menu {
+    padding: 20px 0;
+    background-color: $top-menu-bg;
+    width: 100%;
+
+    &--list {
+      display: inline-flex;
+      text-align: center;
+    }
+
+    &--item {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      $size: 32px;
+      width: $size;
+      height: $size;
+      border-radius: 50%;
+      background-color: $bg-meet-our-team;
+      color: $top-menu-bg;
+      @include transition;
+
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        background-color: $top-menu-bg;
+        border: 3px solid $white;
+      }
+    }
+  }
+
+  .arrow-left,
+  .arrow-right {
+    content: "";
+    position: absolute;
+    top: 43%;
+    $size: 30px;
+    width: $size;
+    height: $size;
+    border: 2px solid $black;
+    border-right: none;
+    border-bottom: none;
+
+    @media all and (max-width: 991px) {
+      $size: 20px;
+      width: $size;
+      height: $size;
+    }
+
+    &:hover,
+    &:active {
+      border: 4px solid $black;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    @media all and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .arrow-left {
+    left: -5%;
+    transform: rotate(315deg);
+
+    @media all and (max-width: 991px) {
+      left: -4%;
+    }
+  }
+
+  .arrow-right {
+    right: -5%;
+    transform: rotate(135deg);
+
+    @media all and (max-width: 991px) {
+      right: -4%;
+    }
+  }
+
+  .owl-nav {
+    margin: 0 !important;
+  }
+
+  .owl-nav.disabled {
+    display: block;
+  }
+}
+// MEET-OUR-TEAM-OWL-CAROUSEL END

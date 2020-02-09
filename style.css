@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #000;
+	justify-content: left;
+	align-items: left;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+.content {
+	display: flex;
+}
+
+ul > li > a {
+	display: block;
+}
+
+li > a {
+	padding: 0 15px;
+	margin-top: 15px;
+}
+
+h1 {
+	text-align: center;
+	size: 36px;
+	color: blue;
+}
+
+h2 {
+	
+	text-align: center;
+	size: 28px;
+	color: #E74C3C;
+}

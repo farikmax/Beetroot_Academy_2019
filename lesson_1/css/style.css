@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font-size: 100%;
+	background-color: black;
+	color: white;
+}

@@ -1,0 +1,66 @@
+// RECENT-WORKS-OWL-CAROUSEL START
+.recent-works-carousel {
+
+  .arrow-left,
+  .arrow-right {
+    content: "";
+    position: absolute;
+    top: 43%;
+    $size: 30px;
+    width: $size;
+    height: $size;
+    border: 2px solid $white;
+    border-right: none;
+    border-bottom: none;
+
+    &:hover,
+    &:active {
+      border: 4px solid $white;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    @media all and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .arrow-left {
+    left: -30%;
+    transform: rotate(315deg);
+  }
+
+  .arrow-right {
+    right: -30%;
+    transform: rotate(135deg);
+  }
+
+  .owl-nav {
+    margin: 0 !important;
+  }
+
+  .owl-dots {
+    margin: 0 !important;
+    display: inline-flex;
+    padding: 45px 0;
+    align-items: center;
+
+    .owl-dot {
+
+      span {
+        background-color: transparent !important;
+        border: 1px solid $white !important;
+        margin: 5px !important;
+      }
+    }
+
+    .owl-dot.active {
+
+      span {
+        border: 2px solid $white;
+        background: $white !important;
+      }
+    }
+  }
+}
+// RECENT-WORKS-OWL-CAROUSEL END

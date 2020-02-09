@@ -1,0 +1,122 @@
+.section1 {
+	display: flex;
+	justify-content: center;
+	background: url('../img/header-bg.png') no-repeat 0 0;
+	background-size: cover;
+	align-items: center;
+	text-align: center;
+	min-height: $container-height;
+	align-items: stretch;
+	width: 100%;
+
+	.section1__content {
+		width: 100%;
+		max-width: $container-width;
+		padding-top: 250px;
+	}
+
+	.section1__content--title {
+		font-size: $huge-size;
+		letter-spacing: 5px;
+		line-height: $huge-size;
+		color: $white-color;
+		font-family: $secondary-font;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	.section1__content--subtitle {
+		font-size: $large-size;
+		letter-spacing: 6px;
+		line-height: 26px;
+		color: $white-color;
+		font-family: $secondary-font;
+		text-align: center;
+		margin-bottom: 50px;
+		text-transform: capitalize; 
+	}
+
+	.search-form {
+		position: relative;
+		font-family: $secondary-font;
+		font-size: $middle-size;
+		display: flex;
+		align-items: center;
+		margin: auto;
+		width: 650px;
+		height: 60px;
+		outline: none;
+		margin-bottom: 120px;
+	}
+
+	.search-form [type="search"] {
+		width: 505px;
+		height: 100%;
+		letter-spacing: 3px;
+		line-height: 26px;
+		background-color: $white-color;
+		color: $light-grey-color;
+		border: 2px solid $white-color;
+		text-align: center;
+	}
+
+	.search-form [type="submit"] {
+		position: relative;
+		width: calc(100% - 505px);
+		height: 100%;
+		border: 2px solid $white-color;
+		border-left: none;
+		background-color: $dark-blue-color;
+		color: $white-color;
+		transition: all .2s ease;
+
+		&:hover {
+			cursor: pointer;
+			background-color: lighten($dark-blue-color,0);
+			color: $black-color;
+		}
+	}
+
+	.section1__link {
+		display: inline-block;
+		text-decoration: none;
+		position: relative;
+		font-size: $middle-size;
+		letter-spacing: 3px;
+		line-height: 26px;
+		color: $white-color;
+		font-family: $secondary-font;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 160px;
+		text-decoration: none;
+		transition: all .2s ease;
+		margin-bottom: 160px;
+
+		&:hover {
+			transform: scale(1.1);
+			color: $light-blue-color;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			top: 150%;
+			right: 49.5%;
+			cursor: pointer;
+			opacity: 1;
+			border: 2px solid white;
+			transform: rotate(45deg);
+			border-top: none;
+			border-left: none;
+			background-color: transparent;
+			transition: all .2s ease;
+		}
+	}
+}

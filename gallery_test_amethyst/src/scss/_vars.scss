@@ -1,0 +1,75 @@
+//IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
+@font-face {
+    font-family: 'Anders';
+    src: url("../fonts/Anders.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url("../fonts/georgia italic.ttf") format("opentype");
+    src: url("../fonts/georgia bold italic.ttf") format("opentype");
+}
+
+//FONTS
+$main-font: 'Lato', sans-serif;
+$secondary-font: 'Georgia Italic', sans-serif;
+$logo-font: 'Anders', sans-serif;
+
+//COLORS
+$white: #ffffff; //header
+$black: #000000; //header
+$violet: #8f66b9; //header
+$orange: #ca7f2f; //header
+$grey: #e5e5e5; //header
+$light-grey: #b9a4cb; //header
+$dark-grey: #333333; //about-us
+$about-grey: #666666; //about-us
+$about-icon: #9966cc; //about-us
+$work-nav-menu: $about-icon;
+$works-img-galery-description: #f9f9f9;
+
+//PX_TO_REM
+$base-size: 14px;
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+$micro-size: px_to_rem(11px);;
+$small-size: px_to_rem(12px);
+$main-title: px_to_rem(36px); 
+$main-title-home: 2.7rem;
+
+//HEADER FONT-SIZE
+$middle-size: px_to_rem(16px);
+$header-carousel-description: px_to_rem(15px);
+$icons-size: px_to_rem(20px);
+$header-carousel-subtitle: px_to_rem(26px);
+$logo-size: px_to_rem(40px);
+$header-carousel-title-media: px_to_rem(45px);
+$header-carousel-title: px_to_rem(90px);
+
+// ABOUT-US FONT-SIZE
+$about-us-title: px_to_rem(30px);
+$about-us-subtitle: $small-size;
+$about-us-description: px_to_rem(13px);
+$about-us-menu--icon: px_to_rem(30px);
+$about-us-menu--paragraph: px_to_rem(18px);
+$about-us-menu--description: $about-us-description;
+$about-us-menu--download: $middle-size;
+
+// WORKS FONT-SIZE
+$works-title: $about-us-title;
+$works-subtitle: $small-size;
+$works-nav-menu-item: $middle-size;
+$works-img-description: $base-size;
+$works-img-title: $middle-size;
+
+
+
+
+
+
+
+// IMG-PATH
+$img-path: "../img";

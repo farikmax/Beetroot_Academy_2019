@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	width: 100%;
+	font-family: Arial;
+	background-color: #6b6b6b;
+}
+
+.content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	max-width: 1140px;
+	margin: auto;
+	padding: 50px 0 0;
+}
+
+.daily {
+	background: #ff512f;
+	background: linear-gradient(45deg, #ff512f 15%, #dd2471 100%);
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	margin-right: 15px;
+}
+.daily ::-webkit-input-placeholder {
+	font-family: Arial;
+	color: #797b7f;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.daily ::-moz-placeholder {
+	font-family: Arial;
+	color: #797b7f;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.daily :-ms-input-placeholder {
+	font-family: Arial;
+	color: #797b7f;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.daily :-moz-placeholder {
+	font-family: Arial;
+	color: #797b7f;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.daily .dailyform__form {
+	padding: 30px;
+	display: block;
+	margin: 50px;
+	max-width: 460px;
+	background-color: white;
+	color: black;
+}
+.daily .dailyform__title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.4rem;
+	font-family: Arial;
+	color: #1b1c1d;
+	font-weight: 700;
+	line-height: 1.3rem;
+	text-align: left;
+	margin-bottom: 15px;
+}
+.daily .fas {
+	font-size: 1.5rem;
+	color: #df2671;
+}
+.daily .dailyform__text {
+	width: 100%;
+	font-family: Arial;
+	color: #797b7f;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+	margin-bottom: 2.2rem;
+}
+.daily .dailyform__text:last-child {
+	margin-bottom: 0;
+}
+.daily .dailyform__link {
+	text-decoration: none;
+	color: #ea355a;
+}
+.daily .dailyform__input-1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.daily .dailyform__input-2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	margin-bottom: 20px;
+}
+.daily [type="text"] {
+	border-radius: 4px;
+	background-color: #f0f0f0;
+	width: 44%;
+	height: 40px;
+	border: none;
+	padding-left: 3%;
+}
+.daily [type="email"],
+.daily [type="password"] {
+	border-radius: 4px;
+	background-color: #f0f0f0;
+	width: 97%;
+	height: 40px;
+	border: none;
+	margin-bottom: 15px;
+	padding-left: 3%;
+}
+.daily [type="submit"] {
+	background-color: #ea355a;
+	border: none;
+	-webkit-box-shadow: 0 3px 0 0 #bd1962;
+	        box-shadow: 0 3px 0 0 #bd1962;
+	height: 50px;
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	font-size: 1.13rem;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.daily [type="submit"]:hover {
+	cursor: pointer;
+	background-color: #ec4c6d;
+	color: yellow;
+}
+
+.payment {
+	background: url("../img/paymentbackground3.png") no-repeat;
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.payment ::-webkit-input-placeholder {
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.payment ::-moz-placeholder {
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.payment :-ms-input-placeholder {
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.payment :-moz-placeholder {
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: left;
+}
+.payment .paymentform {
+	font-family: "Montserrat", sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	width: 100%;
+	max-width: 335px;
+	padding: 0;
+	color: #61726e;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: auto;
+}
+.payment .paymentform__total {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: #f8edaf;
+	width: 100%;
+	padding: 20px;
+}
+.payment .paymentform__title {
+	display: inline-block;
+	color: #6e7f7b;
+	font-size: .85rem;
+	font-weight: 700;
+	text-align: left;
+	line-height: 1.2;
+}
+.payment .paymentform__title .paymentform__subtitle {
+	display: block;
+	color: #a6a28d;
+	font-size: .65rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+}
+.payment .paymentform__money {
+	color: #637570;
+	font-weight: 700;
+	font-size: 2.25rem;
+	text-align: right;
+}
+.payment .paymentform__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 20px;
+	padding-top: 30px;
+}
+.payment .paymentform__cardnumber {
+	font-family: Montserrat;
+	color: #9eabad;
+	font-size: .85rem;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.payment .cardnumber__input {
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bac8cb;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #fff;
+	width: 100%;
+	height: 42px;
+	margin-bottom: 20px;
+}
+.payment .paymentform__date {
+	font-family: Montserrat;
+	color: #9eabad;
+	font-size: .85rem;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.payment .paymentform__dateform {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: space-between;
+	    flex-direction: space-between;
+	margin-bottom: 20px;
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	text-align: left;
+}
+.payment .paymentform__dateform .dateform__mounth {
+	-ms-flex-preferred-size: 65%;
+	flex-basis: 65%;
+	margin-right: 5%;
+	position: relative;
+}
+.payment .paymentform__dateform .dateform__mounth::after {
+	font-size: 16px;
+	position: absolute;
+	top: 18.5px;
+	right: 10px;
+	display: block;
+	content: "";
+	pointer-events: none;
+	opacity: .7;
+	opacity: .3;
+	border: 7px solid transparent;
+	border-top: 7px solid black;
+	background-color: transparent;
+}
+.payment .paymentform__dateform .dateform__year {
+	-ms-flex-preferred-size: 30%;
+	flex-basis: 30%;
+	position: relative;
+}
+.payment .paymentform__dateform .dateform__year::after {
+	font-size: 16px;
+	position: absolute;
+	top: 18.5px;
+	right: 10px;
+	display: block;
+	content: "";
+	pointer-events: none;
+	opacity: .7;
+	opacity: .3;
+	border: 7px solid transparent;
+	border-top: 7px solid black;
+	background-color: transparent;
+}
+.payment .dateform__mounth-select {
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bac8cb;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #fff;
+	width: 100%;
+	height: 42px;
+}
+.payment .dateform__year-select {
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bac8cb;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #fff;
+	width: 100%;
+	height: 44px;
+}
+.payment .paymentform__cvv {
+	font-family: Montserrat;
+	color: #9eabad;
+	font-size: .85rem;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.payment .paymentform__cvvform {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: space-between;
+	    flex-direction: space-between;
+	margin-bottom: 25px;
+	font-family: Montserrat;
+	color: #727f82;
+	font-size: .85rem;
+	text-align: left;
+}
+.payment .cvvform__input {
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bac8cb;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #fff;
+	width: 96px;
+	height: 42px;
+}
+.payment .cvvform__comment {
+	margin: auto;
+	font-family: Montserrat;
+	color: #9eabad;
+	font-size: .75rem;
+	font-weight: 400;
+	text-align: left;
+}
+.payment .cvvform__comment .cvvform__link {
+	color: #9eabad;
+}
+.payment hr {
+	background-color: #edf0f1;
+	margin-bottom: 30px;
+}
+.payment .paymentform__buton {
+	background-color: #25b86a;
+	height: 48px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	font-weight: 700;
+	border: none;
+	margin-bottom: 20px;
+}
+.payment .paymentform__buton:hover {
+	cursor: pointer;
+	background-color: #29cd76;
+	color: green;
+}
+.payment .paymentform__buton-link {
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	font-family: Montserrat;
+	color: #9eabad;
+	font-size: .85rem;
+	font-weight: 400;
+}
+
+select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}

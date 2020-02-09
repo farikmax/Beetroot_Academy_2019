@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Nike_product_card_dark</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<a href="https://www.nike.com"><img src="img/logo.png" alt="logo"></a>
+		</div>
+		<div class="content">
+			<div class="product__image">
+				<a class="product__image--link" href="#">
+					<img class="product__image--image" src="img/Boot.png" alt="Boot">
+				</a>
+				<ul class="product__scrool--items">
+					<li class="scrool__list--black">
+						<input form="order" class="order__radio" id="order_black" type="radio" name="radio" value="color" checked >
+						<label class="boots__label black" for="order_black"></label>
+					</li>
+					<li class="scrool__list--white">
+						<input form="order" class="order__radio" id="order_white" type="radio" name="radio" value="color" checked >
+						<label class="boots__label white" for="order_white"></label>
+					</li>
+					<li class="scrool__list--red">
+						<input form="order" class="order__radio" id="order_red" type="radio" name="radio" value="color" checked >
+						<label class="boots__label red" for="order_red"></label>
+					</li>
+					<li class="scrool__list--blue">
+						<input form="order" class="order__radio" id="order_blue" type="radio" name="radio" value="color" checked >
+						<label class="boots__label blue" for="order_blue"></label>
+					</li>
+				</ul>
+			</div>
+			<div class="product__description">
+				<h1></h1>
+				<h2 class="product__description--title">
+					Nike SB Stefan Janoski Max
+				</h2>
+				<p class="product__description--subtitle">
+					Unisex Skateboarding Shoe
+				</p>
+				<ul class="product__description--rating">
+					<li class="rating__stars--yellow">
+						<i class="fas fa-star"></i>
+					</li>
+					<li class="rating__stars--yellow">
+						<i class="fas fa-star"></i>
+					</li>
+					<li class="rating__stars--yellow">
+						<i class="fas fa-star"></i>
+					</li>
+					<li class="rating__stars">
+						<i class="fas fa-star"></i>
+					</li>
+					<li class="rating__stars">
+						<i class="fas fa-star"></i>
+					</li>
+				</ul>
+				<form class="order" action="#" id="order">
+					<label for="size" class="product__description--size">
+						<select class="size__select" name="Size" id="size" required>
+							<option value="">Size</option>
+							<option value="1">40</option>
+							<option value="2">41</option>
+							<option value="3">42</option>
+							<option value="4">43</option>
+						</select>
+					</label>
+					<label for="qty" class="product__description--qty">
+						<select class="qty__select" name="Qty" id="qty" required>
+							<option value="">Qty</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</label>
+					<input class="product__description--buton" type="submit" value="Add to cart">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
